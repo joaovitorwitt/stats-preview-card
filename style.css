@@ -25,6 +25,7 @@ img {
 main {
     display: flex;
     max-width: 1000px;
+    padding: 0 2%;
 }
 
 .content-wrapper {
@@ -77,14 +78,14 @@ main {
     background-color: hsl(244, 38%, 16%);
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-
+    background: linear-gradient(rgba(72, 15, 107, 0.6), rgba(170, 92, 219, 0.2)),
+    url(./images/image-header-desktop.jpg);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-.image-wrapper img {
-    filter: invert(10%) sepia(68%) saturate(4400%) hue-rotate(241deg) brightness(50%) contrast(89%);
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-}
+
 
 
 
@@ -101,6 +102,7 @@ main {
         border-bottom-right-radius: 15px;
         border-top-left-radius: 0;
         border-top-right-radius: 0;
+        flex: 1;
     }
 
     .numbers {
@@ -111,19 +113,20 @@ main {
         margin: 1rem;
     }
 
-    .image-wrapper img {
-        width: 100%;
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px;
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
-    }
+   
 
     .image-wrapper {
-        width: 100%;
-        border-top-left-radius: 15px;
+        padding-top: 300px;
         border-top-right-radius: 15px;
-        border-bottom-left-radius: 0;
+        border-top-left-radius: 15px;
         border-bottom-right-radius: 0;
+        background: linear-gradient(rgba(72, 15, 107, 0.6), rgba(170, 92, 219, 0.2)),
+        url(./images/image-header-desktop.jpg);
+        background-blend-mode: multiply;
+        background-size: cover;
+        background-repeat: no-repeat;
+
     }
+
+    
 }
